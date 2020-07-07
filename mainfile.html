@@ -66,7 +66,7 @@
         <input type="checkbox" id="p2c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p2b1" value="Previous" onclick="gotopage1()">Previous</button>
+            <button type="button" name="p2b1" value="Previous" onclick="backtopage1()">Previous</button>
             <!--code for gotopage1()-->
             <button type="button" name="p2b2" value="Next" onclick="gotopage3()">Next</button>
             <!--code for gotopage3()-->
@@ -83,7 +83,7 @@
         <input type="checkbox" id="p3c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p3b1" value="Previous" onclick="gotopage2()">Previous</button>
+            <button type="button" name="p3b1" value="Previous" onclick="backtopage2()">Previous</button>
             <!--code for gotopage2()-->
             <button type="button" name="p3b2" value="Next" onclick="gotopage4()">Next</button>
             <!--code for gotopage3()-->
@@ -100,7 +100,7 @@
         <input type="checkbox" id="p4c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p4b1" value="Previous" onclick="gotopage3()">Previous</button>
+            <button type="button" name="p4b1" value="Previous" onclick="backtopage3()">Previous</button>
             <!--code for gotopage3()-->
             <button type="button" name="p4b2" value="Next" onclick="gotopage5()">Next</button>
             <!--code for gotopage5()-->
@@ -117,7 +117,7 @@
         <input type="checkbox" id="p5c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p5b1" value="Previous" onclick="gotopage4()">Previous</button>
+            <button type="button" name="p5b1" value="Previous" onclick="backtopage4()">Previous</button>
             <button type="button" name="p5b2" value="Next" onclick="gotopage6()">Next</button>
         </div>
     </form>
@@ -132,7 +132,7 @@
         <input type="checkbox" id="p6c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p6b1" value="Previous" onclick="gotopage5()">Previous</button>
+            <button type="button" name="p6b1" value="Previous" onclick="backtopage5()">Previous</button>
             <button type="button" name="p6b2" value="Next" onclick="gotopage7()">Next</button>
         </div>
     </form>
@@ -147,7 +147,7 @@
         <input type="checkbox" id="p7c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p7b1" value="Previous" onclick="gotopage6()">Previous</button>
+            <button type="button" name="p7b1" value="Previous" onclick="backtopage6()">Previous</button>
             <button type="button" name="p7b2" value="Next" onclick="gotopage8()">Next</button>
         </div>
     </form>
@@ -162,7 +162,7 @@
         <input type="checkbox" id="p8c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p8b1" value="Previous" onclick="gotopage7()">Previous</button>
+            <button type="button" name="p8b1" value="Previous" onclick="backtopage7()">Previous</button>
             <button type="button" name="p8b2" value="Next" onclick="gotopage9()">Next</button>
         </div>
     </form>
@@ -177,7 +177,7 @@
         <input type="checkbox" id="p9c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p9b1" value="Previous" onclick="gotopage8()">Previous</button>
+            <button type="button" name="p9b1" value="Previous" onclick="backtopage8()">Previous</button>
             <button type="button" name="p9b2" value="Next" onclick="gotopage10()">Next</button>
         </div>
     </form>
@@ -192,7 +192,7 @@
         <input type="checkbox" id="p10c6">Art<br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" name="p10b1" value="Previous" onclick="gotopage3()">Previous</button>
+            <button type="button" name="p10b1" value="Previous" onclick="backtopage9()">Previous</button>
             <imput type="Submit" name="p10b2" onclick="stats()">Submit</button>
         </div>
     </form>
@@ -206,6 +206,161 @@
         var ACMcounter = 0;
         var Pictorealcounter = 0;
         var Roboticscounter = 0;
+        var a = document.getElementById("page2")
+        a.style.display = "none";
+        var b = document.getElementById("page3")
+        b.style.display = "none";
+        var c = document.getElementById("page4")
+        c.style.display = "none";
+        var d = document.getElementById("page5")
+        d.style.display = "none";
+        var e = document.getElementById("page6")
+        e.style.display = "none";
+        var f = document.getElementById("page7")
+        f.style.display = "none";
+        var g = document.getElementById("page8")
+        g.style.display = "none";
+        var g = document.getElementById("page9")
+        g.style.display = "none";
+        var h = document.getElementById("page10")
+        h.style.display = "none";
+
+        function backtopage1(){
+            var x = document.getElementById("page2")
+            x.style.display = "none";
+            var y = document.getElementById("page1")
+            y.style.display= "block"
+
+        }
+        function backtopage2(){
+            var x = document.getElementById("page3")
+            x.style.display = "none";
+            var y = document.getElementById("page2")
+            y.style.display= "block"
+
+        }
+        function backtopage3(){
+            var x = document.getElementById("page4")
+            x.style.display = "none";
+            var y = document.getElementById("page3")
+            y.style.display= "block"
+
+        }
+        function backtopage4(){
+            var x = document.getElementById("page5")
+            x.style.display = "none";
+            var y = document.getElementById("page4")
+            y.style.display= "block"
+
+        }
+        function backtopage5(){
+            var x = document.getElementById("page6")
+            x.style.display = "none";
+            var y = document.getElementById("page5")
+            y.style.display= "block"
+
+        }
+        function backtopage6(){
+            var x = document.getElementById("page7")
+            x.style.display = "none";
+            var y = document.getElementById("page6")
+            y.style.display= "block"
+
+        }
+        function backtopage7(){
+            var x = document.getElementById("page8")
+            x.style.display = "none";
+            var y = document.getElementById("page7")
+            y.style.display= "block"
+
+        }
+        function backtopage8(){
+            var x = document.getElementById("page9")
+            x.style.display = "none";
+            var y = document.getElementById("page8")
+            y.style.display= "block"
+
+        }
+        function backtopage9(){
+            var x = document.getElementById("page10")
+            x.style.display = "none";
+            var y = document.getElementById("page9")
+            y.style.display= "block"
+
+        }
+        
+        function gotopage2() 
+        {
+            var x = document.getElementById("page1");
+            x.style.display = "none";
+            var y = document.getElementById( "page2");
+            y.style.display = "block";
+
+        }
+        function gotopage3() 
+        {
+            var x = document.getElementById("page2");
+            x.style.display = "none";
+            var y = document.getElementById( "page3");
+            y.style.display = "block";
+
+        }
+        function gotopage4() 
+        {
+            var x = document.getElementById("page3");
+            x.style.display = "none";
+            var y = document.getElementById( "page4");
+            y.style.display = "block";
+
+        }
+        function gotopage5() 
+        {
+            var x = document.getElementById("page4");
+            x.style.display = "none";
+            var y = document.getElementById( "page5");
+            y.style.display = "block";
+
+        }
+        function gotopage6() 
+        {
+            var x = document.getElementById("page5");
+            x.style.display = "none";
+            var y = document.getElementById( "page6");
+            y.style.display = "block";
+
+        }
+        function gotopage7() 
+        {
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById( "page7");
+            y.style.display = "block";
+
+        }
+        function gotopage8() 
+        {
+            var x = document.getElementById("page6");
+            x.style.display = "none";
+            var y = document.getElementById( "page8");
+            y.style.display = "block";
+
+        }
+        function gotopage9() 
+        {
+            var x = document.getElementById("page8");
+            x.style.display = "none";
+            var y = document.getElementById( "page9");
+            y.style.display = "block";
+
+        }
+        function gotopage10() 
+        {
+            var x = document.getElementById("page9");
+            x.style.display = "none";
+            var y = document.getElementById( "page10");
+            y.style.display = "block";
+
+        }
     </script>
 </body>>
 </html>
