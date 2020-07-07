@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>clubs ka chutyap</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mainCSS.css">
     </head>
     
 <body>
@@ -18,7 +18,7 @@
         
         <div class="form-box"> <!--the white form box
         it will be displayed in the middle.....do write css for "form-box"-->
-            <form class="group" name="f1" method="POST">
+            <form id="enter" class="group" name="f1" method="POST" >
                 <!--this will be the first page in the form box in which there will be a welcome message
                 and you have to click on enter to start the form-->
                 <h2>...welcome message....</h2>
@@ -27,12 +27,12 @@
                      at the center,padding,etc.-->
                     <div id="btn"></div><!--it will contain the colour of the button,button-radius,
                     note : there is no image used in the button-->
-                    <button type="button" name="p0b1" value="Enter" onclick="enter()">Enter</button>
+                    <button type="button"  name="p0b1" value="Enter" onclick="enter()">Enter</button>
                 </div>
             </form>
-        </div>
+        
     
-    <form id="page1" class="page"><!--this form will be sliding when the enter button is clicked,
+    <form id="page1" class="page" class="one"><!--this form will be sliding when the enter button is clicked,
     so overflow-command should be there
     Also, i've mentioned an example down which has been copied for the next 10 ques, so that you guys can just
     type the ques and each ques has beeen provided 6 checkboxes, all the boxes follow a specific pattern of id
@@ -44,12 +44,12 @@
         <input type="checkbox" id="p1c4">Public Speaking<br>
         <input type="checkbox" id="p1c5">Drama<br>
         <input type="checkbox" id="p1c6">Art<br>
-        <div class="button-box" ><!--this has been provided above also, so if you write the code for class:
+        <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
         "button-box" once you don't need to repeat it-->
             <div id="btn"></div><!--you have already written the css of id="btn"-->
-            <button type="button" name="p1b1" value="Previous">Previous</button>
+            <button type="button" class="toggle-btn" name="p1b1" value="Previous">Previous</button>
             <!--write a js code that will slide in the previous page-->
-            <button type="button" name="p1b2" value="Next" onclick="gotopage2()">Next</button>
+            <button type="button" class="toggle-btn" name="p1b2" value="Next" onclick="gotopage2()">Next</button>
             <!--write a js code that will slide page 2 -->
         </div>
     </form>
@@ -195,5 +195,9 @@
         </div>
     </form>
     </div>>
+</div>
+<script>
+
+</script>
 </body>>
 </html>
