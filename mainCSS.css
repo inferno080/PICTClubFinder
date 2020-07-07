@@ -19,3 +19,16 @@
     background: #fff;
     padding: 5px;
 }
+.overlap{
+    position:relative;
+}
+
+.page{
+    position: absolute; /*This causes the 10 questions to overlap. While editing comment this command out*/
+
+    /* The CSS for questions goes here . IT is ManC's job*/
+}
+
+.stack{
+    z-index: 0;
+}
