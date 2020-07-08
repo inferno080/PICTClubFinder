@@ -4,7 +4,7 @@
         <title>PICTClubFinder</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mainCSS.CSS">
->
+
     </head>
     
 <body>
@@ -28,9 +28,9 @@
                 <div class="button-box" >
                     <!--do write the css of the "button-box",it will contain information to align it
                      at the center,padding,etc.-->
-                    <div id="btn" class="toggle-btn"></div><!--it will contain the colour of the button,button-radius,
+                    <div id="btn" ></div><!--it will contain the colour of the button,button-radius,
                     note : there is no image used in the button-->
-                    <button type="button"  name="p0b1" value="Enter" onclick="enter()">Enter</button>
+                    <button type="button" class="toggle-btn" name="p0b1" value="Enter" onclick="enter()">Enter</button>
                 </div>
             </form>
 
@@ -38,15 +38,13 @@
     <form id="page1" class="page" class="one"><!--this form will be sliding when the enter button is clicked,
 
         </div>
-        <div class="overlap">
+        <div class="overlap">-->
     
-    <form id="page1" class="page stack"--><!--this form will be sliding when the enter button is clicked,
->>>>>>> a2599d7c587e896fe7079f0cdf7d1ab06874e067
-    so overflow-command should be there
-    Also, i've mentioned an example down which has been copied for the next 10 ques, so that you guys can just
+    <!--form id="page1" class="page stack"--><!--this form will be sliding when the enter button is clicked,
+    so overflow-command should be there,    Also, i've mentioned an example down which has been copied for the next 10 ques, so that you guys can just
     type the ques and each ques has beeen provided 6 checkboxes, all the boxes follow a specific pattern of id
     names , they are important as they will be used for increasing the pointers in javascript-->
-        <label><span><h2>which field are you interested in?</h2>></span></label><br>
+        <label><span><h2>which field are you interested in?</h2></span></label><br>
         <input type="checkbox" id="p1c1">Technical field<br>
         <input type="checkbox" id="p1c2">Social Issues<br>
         <input type="checkbox" id="p1c3">Robots<br>
@@ -55,7 +53,7 @@
         <input type="checkbox" id="p1c6">Art<br>
         <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
         "button-box" once you don't need to repeat it-->
-            <div id="btn" class="toggle-btn"></div><!--you have already written the css of id="btn"-->
+            <div id="btn" ></div><!--you have already written the css of id="btn"-->
             <button type="button" class="toggle-btn" name="p1b1" value="Previous">Previous</button>
             <!--write a js code that will slide in the previous page-->
             <button type="button" class="toggle-btn" name="p1b2" value="Next" onclick="gotopage2()">Next</button>
@@ -72,7 +70,7 @@
         <input type="checkbox" id="p2c5">Drama<br>
         <input type="checkbox" id="p2c6">ayush chuttar ;)<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn" ></div>
             <button type="button" class ="toggle-btn" name="p2b1" value="Previous" onclick="backtopage1()">Previous</button>
             <!--code for gotopage1()-->
             <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="gotopage3()">Next</button>
@@ -87,7 +85,7 @@
         <input type="checkbox" id="p3c3">100-200<br>
         <input type="checkbox" id="p3c4">200+<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn" ></div>
             <button type="button" class ="toggle-btn" name="p3b1" value="Previous" onclick="backtopage2()">Previous</button>
             <!--code for gotopage2()-->
             <button type="button" class ="toggle-btn" name="p3b2" value="Next" onclick="gotopage4()">Next</button>
@@ -104,7 +102,7 @@
         <input type="checkbox" id="p4c5">Drama<br>
         <input type="checkbox" id="p4c6">Art<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn"></div>
             <button type="button" class ="toggle-btn" name="p4b1" value="Previous" onclick="backtopage3()">Previous</button>
             <!--code for gotopage3()-->
             <button type="button" class ="toggle-btn" name="p4b2" value="Next" onclick="gotopage5()">Next</button>
@@ -121,7 +119,7 @@
         <input type="checkbox" id="p5c5">Drama<br>
         <input type="checkbox" id="p5c6">Art<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn"></div>
             <button type="button" class ="toggle-btn" name="p5b1" value="Previous" onclick="backtopage4()">Previous</button>
             <button type="button" class ="toggle-btn" name="p5b2" value="Next" onclick="gotopage6()">Next</button>
         </div>
@@ -136,7 +134,7 @@
         <input type="checkbox" id="p6c5">Drama<br>
         <input type="checkbox" id="p6c6">Art<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn"></div>
             <button type="button" class ="toggle-btn" name="p6b1" value="Previous" onclick="backtopage5()">Previous</button>
             <button type="button" class ="toggle-btn" name="p6b2" value="Next" onclick="gotopage7()">Next</button>
         </div>
@@ -151,7 +149,7 @@
         <input type="checkbox" id="p7c5">Drama<br>
         <input type="checkbox" id="p7c6">Art<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn"></div>
             <button type="button" class ="toggle-btn" name="p7b1" value="Previous" onclick="backtopage6()">Previous</button>
             <button type="button" class ="toggle-btn" name="p7b2" value="Next" onclick="gotopage8()">Next</button>
         </div>
@@ -166,7 +164,7 @@
         <input type="checkbox" id="p8c5">Drama<br>
         <input type="checkbox" id="p8c6">Art<br>
         <div class="button-box" >
-            <div id="btn" class="toggle-btn"></div>
+            <div id="btn"></div>
             <button type="button" class ="toggle-btn" name="p8b1" value="Previous" onclick="backtopage7()">Previous</button>
             <button type="button" class ="toggle-btn" name="p8b2" value="Next" onclick="gotopage9()">Next</button>
         </div>
@@ -201,7 +199,7 @@
             <imput type="Submit" class ="toggle-btn" name="p10b2" onclick="stats()">Submit</button>
         </div>
     </form>
-    </div>>
+    </div>
 
     </div>
     <script>
@@ -372,6 +370,6 @@
 
         }
     </script>
->>>>>>> a2599d7c587e896fe7079f0cdf7d1ab06874e067
-</body>>
+
+</body>
 </html>
