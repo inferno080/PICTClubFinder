@@ -38,11 +38,11 @@
     /*border-width: 2px;*/
     
 }
-/*.button-box:hover{
+.button-box:hover{
 
     cursor: pointer;
     border-color: rgba(0,0,0,0.4);
-}*/
+}
 .toggle-btn{
     padding: 10px 30px;
     border: 0;
@@ -61,18 +61,29 @@
     border-radius: 20px;
     transition: 0.5s;
 }
-/*.page{
+
+#btn1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06); 
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.page{
     top: 180px;
-    width: 100%;
+    width: 40%;
     padding: 200px, 10px;
     margin: 5px, 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid #999;
+    /*border-bottom: 1px solid #999;*/
     outline: none;
     background: transparent;
-}*/
+}
 /*
 #page1{
     left:50px
@@ -86,7 +97,7 @@
 
 .page{
     position: absolute;
-    text-align: center; /*This causes the 10 questions to overlap. While editing comment this command out*/
+    text-align: left; /*This causes the 10 questions to overlap. While editing comment this command out*/
     /* The CSS for questions goes here . IT is ManC's job*/
 }
 
@@ -96,8 +107,11 @@
 
 .checkbox{
     margin:10px 10px 2px 0;
+    text-align: left;
 }
 
 .container{
     align-content: center;
 }
+
+/* d
