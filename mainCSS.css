@@ -101,3 +101,10 @@
 .container{
     align-content: center;
 }
+.progress{
+    background-color: #20201F;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+
