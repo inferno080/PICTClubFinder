@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     text-align: center;
-    
+    text-size: 20px;
 }
 .background{
     height:100%;
@@ -113,13 +113,10 @@
 .container{
     align-content: center;
 }
-<<<<<<< HEAD
 .progress{
     background-color: #20201F;
     border-radius: 20px;
     padding: 4px;
 }
 
-=======
->>>>>>> 8e1321ee86a0b7d48b4015b587e8bc2cd503eacf
 
