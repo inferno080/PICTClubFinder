@@ -22,17 +22,22 @@
  
     <div style="padding-left: 500px; padding-top: 200px;">
         
+        
 
-    <form id= "page0" class=" stack page overlap" style="padding-left: 150 px ; padding-top:50px ; ">
-            <h1 id= "enter" class="group" style="text-align: center;">WELCOME FRESHERS</h1>
-            <div class="button-box">
-                    <!--do write the css of the "button-box",it will contain information to align it
-                     at the center,padding,etc.-->
-                    <div id="btn"><!--it will contain the colour of the button,button-radius,
-                    note : there is no image used in the button-->
-                    <button type="button" class="toggle-btn" name="p0b1" value="Enter" onclick="enter()">Enter</button>
-                </div>
-                </div>
+    
+    <form id="page0" class="page stack">
+        <label><span><h2>WELCOME</h2></span></label><br>
+        <input type="checkbox" class="checkbox" id="p2c1" onclick="MButton(); MUN();"><br>
+        <input type="checkbox" class="checkbox" id="p2c2"onclick = "P1Button(); ACM(); P2Button(); IEEE(); P3Button();Robotics();"><br>
+        <input type="checkbox" class="checkbox" id="p2c3" onclick="NButton(); NSS(); Picto(); PButton();"><br>
+        <input type="checkbox" class="checkbox" id="p2c4" onclick="TED(); TButton(); Art(); AButton(); Debsoc(); DButton();"><br>
+        <input type="checkbox" class="checkbox" id="p2c6" onclick="E(); EButton();"><br>
+        <div class="button-box" >
+            <div id="btn1" ></div>
+           
+            <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="enter()">enter</button>
+            <!--code for gotopage3()-->
+        </div>
     </form>
 
     
