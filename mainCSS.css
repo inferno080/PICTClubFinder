@@ -32,9 +32,9 @@
     box-shadow: 0 0 20 9px #ff61241f;
     /*box-shadow: 0 10px 0 10px #6624ff1f;*/
     border-radius: 20px;
-    font-family: "montserrat";
+    /*font-family: "montserrat";
     transition: 0.8s;
-    overflow: hidden;
+    overflow: hidden;*/
     /*border-width: 2px;*/
     
 }
@@ -92,4 +92,8 @@
 
 .stack{
     z-index: 0;
+}
+
+.checkbox{
+    margin:10px 10px 2px 0;
 }
