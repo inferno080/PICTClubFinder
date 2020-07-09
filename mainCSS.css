@@ -38,11 +38,11 @@
     /*border-width: 2px;*/
     
 }
-/*.button-box:hover{
+.button-box:hover{
 
     cursor: pointer;
     border-color: rgba(0,0,0,0.4);
-}*/
+}
 .toggle-btn{
     padding: 10px 30px;
     border: 0;
