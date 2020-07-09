@@ -45,12 +45,12 @@
     type the ques and each ques has beeen provided 6 checkboxes, all the boxes follow a specific pattern of id
     names , they are important as they will be used for increasing the pointers in javascript-->
         <label><span><h2>What do you do watch on YouTube?</h2>></span></label><br>
-        <input type="checkbox" id="p1c1"> Ted Talks<br>
-        <input type="checkbox" id="p1c2">Geopolitics and news <br>
-        <input type="checkbox" id="p1c3">Tech reviews<br>
-        <input type="checkbox" id="p1c4">Social issues/ nature related documentaries<br>
-        <input type="checkbox" id="p1c5">Fashion YouTubers<br>
-        <input type="checkbox" id="p1c6">Music videos<br>
+        <input type="checkbox" id="p1c1" onclick="TED();"> Ted Talks <br>
+        <input type="checkbox" id="p1c2" onclick="MUN();">Geopolitics and news <br>
+        <input type="checkbox" id="p1c3" onclick="ACM();PISB();Robotics();">Tech reviews<br>
+        <input type="checkbox" id="p1c4" onclick="NSS();Debsoc();Picto();">Social issues/ nature related documentaries<br>
+        <input type="checkbox" id="p1c5" onclick="Art();AButton();" >Fashion YouTubers<br>
+        <input type="checkbox" id="p1c6" onclick="Art();AButton();">Music videos<br>
         <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
         "button-box" once you don't need to repeat it-->
             <div id="btn" ></div><!--you have already written the css of id="btn"-->
@@ -191,9 +191,57 @@
         var Pictorealcounter = 0;
         var Roboticscounter = 0;
         var ArtCircle = 0;
-        var NSS = 0;
+        var NSSCounter = 0;
         var Ecell = 0;
+        
+        var AB = 0;
 
+        function AButton()
+        {
+            AB = AB + 1;  
+            if (AB%2 == 0)
+            {
+                ARTN();
+            }
+        }
+
+        function refresh()
+        {
+            AB = 0;
+        }
+        
+        function ARTN(){
+            ArtCircle = ArtCircle - 2;
+        }
+
+        function Art(){
+           ArtCircle =  ArtCircle + 1;
+        }
+
+        function Picto(){
+            Pictorealcounter = Pictorealcounter + 1;
+        }
+        function Debsoc(){
+            DebSoccounter = DebSoccounter + 1;
+        }
+        function NSS(){
+            NSSCounter = NSSCounter + 1;
+        }
+        function Robotics(){
+            Roboticscounter = Roboticscounter +1;
+        }
+        function PISB(){
+            IEEEcounter = IEEEcounter + 1;
+        }
+        function ACM(){
+            ACMCounter = ACMCounter +1;
+        }
+        function MUN(){
+            MUNCounter = MUNCounter +1;
+        }
+        function TED(){
+            TedXcounter =TedXcounter +1;
+        }
 
         
         var a = document.getElementById("page2");
@@ -220,6 +268,7 @@
             x.style.display = "none";
             var y = document.getElementById("page1");
             y.style.display= "block";
+            refresh();
 
         }
         function backtopage2(){
@@ -285,6 +334,7 @@
             x.style.display = "none";
             var y = document.getElementById( "page2");
             y.style.display = "block";
+            alert(ArtCircle)
 
         }
         function gotopage3() 
