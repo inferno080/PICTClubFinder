@@ -56,7 +56,7 @@
         <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
         "button-box" once you don't need to repeat it-->
             <div id="btn" ></div><!--you have already written the css of id="btn"-->
-            <button type="button" class="toggle-btn" name="p1b1" value="Previous">Previous</button>
+            <button type="button" class="toggle-btn" name="p1b1" value="Previous" onclick="backtopage1()">Previous</button>
             <!--write a js code that will slide in the previous page-->
             <button type="button" class="toggle-btn" name="p1b2" value="Next" onclick="gotopage2()">Next</button>
             <!--write a js code that will slide page 2 -->
@@ -374,6 +374,8 @@
         function E(){
             ECell = ECell + 1;
         }
+        var l = document.getElementById("page0");
+        l.style.display ="none"; 
 
         var t = document.getElementById("page1");
         t.style.display ="none";
@@ -403,6 +405,8 @@
             g.style.display = "none";
             refresh();
         }
+        
+
 
         function backtopage1(){
             var x = document.getElementById("page2");
