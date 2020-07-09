@@ -17,8 +17,8 @@
     width: 380px;
     height: 480px;
     position: relative;
-    margin: 6% auto;
-    background: #fff;
+    margin: 6% auto; 
+    background:white;
     padding: 5px;
     /*border-width: 5px;
     border: black;*/
@@ -85,8 +85,8 @@
 }
 
 .page{
-    position: absolute; /*This causes the 10 questions to overlap. While editing comment this command out*/
-
+    position: absolute;
+    text-align: center; /*This causes the 10 questions to overlap. While editing comment this command out*/
     /* The CSS for questions goes here . IT is ManC's job*/
 }
 
@@ -96,4 +96,8 @@
 
 .checkbox{
     margin:10px 10px 2px 0;
+}
+
+.container{
+    align-content: center;
 }

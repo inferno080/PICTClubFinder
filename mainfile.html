@@ -7,8 +7,9 @@
 
     </head>
     
-<body>
-    <div class="background" >
+<body class="container ">
+    <div class="background">
+        
         <!--this is for background image, this tag will close at the end, sample css example
         .background{
             height:100%;
@@ -18,25 +19,24 @@
         background-size:cover;
         position:absolute;
         }-->
+ 
+    <div style="padding-left: 500px; padding-top: 200px;">
         
-        
-        <div class="form-box"> <!--the white form box
-        it will be displayed in the middle.....do write css for "form-box"-->
-            <form id="enter" class="group" name="f1">
-                <!--this will be the first page in the form box in which there will be a welcome message
-                and you have to click on enter to start the form-->
-                <h2>...welcome message....</h2>
-                <div class="button-box" >
+
+    <form id= "page0" class=" stack page overlap" style="padding-left: 150 px ; padding-top:50px ; ">
+            <h1 id= "enter" class="group" style="text-align: center;">WELCOME FRESHERS</h1>
+            <div class="button-box">
                     <!--do write the css of the "button-box",it will contain information to align it
                      at the center,padding,etc.-->
-                    <div id="btn" ></div><!--it will contain the colour of the button,button-radius,
+                    <div id="btn"><!--it will contain the colour of the button,button-radius,
                     note : there is no image used in the button-->
                     <button type="button" class="toggle-btn" name="p0b1" value="Enter" onclick="enter()">Enter</button>
                 </div>
-            </form>
+                </div>
+    </form>
 
     
-    <form id="page1" class="page" class="one"><!--this form will be sliding when the enter button is clicked,
+    <form id="page1" class=" page stack " class="one"><!--this form will be sliding when the enter button is clicked,
 
         </div>
         <div class="overlap">-->
@@ -180,8 +180,8 @@
             <imput type="Submit" class ="toggle-btn" name="p10b2" onclick="stats()">Submit</button>
         </div>
     </form>
-    </div>
-
+</div>
+</div>
     </div>
     <script>
         var MUNcounter = 0;
@@ -210,6 +210,7 @@
         {
             AB = 0;
         }
+        
 
         function Art(){
            ArtCircle =  ArtCircle + 1;
@@ -240,7 +241,8 @@
             TedXcounter =TedXcounter +1;
         }
 
-        
+        var t = document.getElementById("page1");
+        t.style.display ="none";
         var a = document.getElementById("page2");
         a.style.display = "none";
         var b = document.getElementById("page3");
@@ -259,6 +261,13 @@
         g.style.display = "none";
         var h = document.getElementById("page10");
         h.style.display = "none";
+
+
+        function enter(){
+            t.style.display="block";
+            var g = document.getElementById("page0");
+            g.style.display = "none";
+        }
 
         function backtopage1(){
             var x = document.getElementById("page2");
