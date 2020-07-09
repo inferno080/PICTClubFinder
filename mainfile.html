@@ -49,7 +49,7 @@
         <input type="checkbox" id="p1c2" onclick="MUN();">Geopolitics and news <br>
         <input type="checkbox" id="p1c3" onclick="ACM();PISB();Robotics();">Tech reviews<br>
         <input type="checkbox" id="p1c4" onclick="NSS();Debsoc();Picto();">Social issues/ nature related documentaries<br>
-        <input type="checkbox" id="p1c5" onclick="Art();AButton();" >Fashion YouTubers<br>
+        <!--<input type="checkbox" id="p1c5" onclick="Art();AButton();" >Fashion YouTubers<br>-->
         <input type="checkbox" id="p1c6" onclick="Art();AButton();">Music videos<br>
         <div class="button-box"> <!--this has been provided above also, so if you write the code for class:
         "button-box" once you don't need to repeat it-->
@@ -201,17 +201,13 @@
             AB = AB + 1;  
             if (AB%2 == 0)
             {
-                ARTN();
+                ArtCircle = ArtCircle -2 ;
             }
         }
 
         function refresh()
         {
             AB = 0;
-        }
-        
-        function ARTN(){
-            ArtCircle = ArtCircle - 2;
         }
 
         function Art(){
