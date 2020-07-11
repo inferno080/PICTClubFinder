@@ -16,7 +16,7 @@
 
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 580px;
     position: relative;
     margin: 6% auto; 
     background:white;
@@ -39,6 +39,21 @@
     /*border-width: 2px;*/
     
 }
+
+.button-box1{
+    width: 15px;
+    margin: 15px auto;
+    position: relative;
+    /*padding: 10px 20px;*/
+    /*border: 1px solid rgb(172, 99, 40);*/
+    box-shadow: 0 0 20 9px #ff61241f;
+    /*box-shadow: 0 10px 0 10px #6624ff1f;*/
+    border-radius: 10px;
+    /*font-family: "montserrat";
+    transition: 0.8s;
+    overflow: hidden;*/
+    /*border-width: 2px;*/
+}
 .button-box:hover{
 
     cursor: pointer;
@@ -46,6 +61,14 @@
 }
 .toggle-btn{
     padding: 10px 30px;
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.toggle-btn1{
+    padding: 10px 10px;
     border: 0;
     background: transparent;
     outline: none;
@@ -73,9 +96,19 @@
     border-radius: 20px;
     transition: 0.5s;
 }
+#btn3{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06); 
+    border-radius: 60px;
+    /*transition: 0.5s;*/
+}
 .page{
-    top: 180px;
-    width: 40%;
+    top: 140px;
+    width: 36%;
     padding: 200px, 10px;
     margin: 5px, 0;
     border-top: 0;
