@@ -129,5 +129,6 @@ function animate(){
         
     }
 }
+init();
 animate();
 
