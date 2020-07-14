@@ -283,7 +283,7 @@
         <div class="button-box" >
             <div id="btn" ></div>
             <button type="button" class ="B1" name="p10b1" value="Previous" onclick="backtopage9(); refresh();">Previous</button>
-            <a href="lastpagelayout.htm"><button type= "button" button id= "start" class ="B2" name="p10b2" onclick="refresh();">Submit </button></a>
+            <a href="lastpagelayout.htm"><button type= "button" button id= "start" class ="B2" name="p10b2" onclick="stats(); refresh();">Submit </button></a>
         </div>
     </form>
 </div>
@@ -638,7 +638,7 @@
 
             function stats()
         {
-            alert(MUNcounter + "," + IEEEcounter+","+ ACMcounter+","+ Ecell+ ","+ NSSCounter+","+TedXcounter + ","+ ArtCircle + "," +Pictorealcounter + ","+ Roboticscounter+ "," +DebSoccounter);
+            
         
             localStorage.setItem("MUN", MUNcounter);
             localStorage.setItem("PISB", IEEEcounter);
