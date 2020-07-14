@@ -1,8 +1,8 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext('2d');
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 let particlesArray;
 
 // get mouse position
@@ -35,7 +35,7 @@ class Particle{
     draw() {
         ctx.beginPath();
         ctx.arc(this.x,this.y,this.size,0,Math.PI*2,false);
-        ctx.fillStyle = "#8C5523";
+        ctx.fillStyle = "#000";
         ctx.fill();
     }
     
@@ -88,7 +88,7 @@ function init() {
         let y = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let directionX = (Math.random() * 5) - 2.5;
         let directionY = (Math.random() * 5) - 2.5;
-        let color = "#8C5523";
+        let color = "#000";
 
         particlesArray.push(new Particle(x,y,directionX,directionY, size ,color));
 
@@ -106,7 +106,7 @@ function connect() {
             
             if(distance< (canvas.width/7) * (canvas.height/7)) {
                 opacityValue = 1 - (distance/20000)
-                ctx.strokeStyle='rgba(140,85,31,1' + opacityValue + ')';
+                ctx.strokeStyle='rgba(0,0,0,1)' + opacityValue + ')';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
