@@ -5,13 +5,25 @@
     /*font-size: 20px;*/
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.blankbox{
+ background-color: olivedrab;
+ order: 2;
+}
+
 .background{
     height:100%;
     width:100%;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg2.jpg);
+    background-color: #333;
+    /*background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg2.jpg); */
     background-position: center;
     background-size: cover;
     position: absolute;
+    padding-bottom: 50px;
+    align-content: center;
+    top: -50px;
+    padding-right: 80px;
+    left: -80px;
 }
 
 .form-box{
@@ -75,7 +87,8 @@
     cursor: pointer;
     position: relative;
 }
-#btn{
+
+/*#btn{
     top: 0;
     left: 0;
     position: absolute;
@@ -96,14 +109,47 @@
     border-radius: 20px;
     transition: 0.5s;
 }
+*/
+.button-box{
+  width: 400px;
+}
+
+.B1 {
+    background-color: #2C3E50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    float: left;
+    border-radius: 10px;
+    
+  }
+  .B2 {
+    background-color:#E74C3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    float: right;
+    border-radius: 10px;
+    
+  }
 #btn3{
     top: 0;
     left: 0;
     position: absolute;
     width: 30px;
     height: 100%;
-    background: linear-gradient(to right, #ff105f, #ffad06); 
-    border-radius: 60px;
+    /*background: linear-gradient(to right, #ff105f, #ffad06); */
+
+    background-color: #333;
+    border-radius: 100%;
     /*transition: 0.5s;*/
 }
 .page{
@@ -114,9 +160,12 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     /*border-bottom: 1px solid #999;*/
-    outline: none;
-    background: transparent;
+    background: grey;
+    /*color: honeydew;*/
+    border-radius: 10px;
 }
 /*
 #page1{

@@ -25,15 +25,16 @@
         
 
     
-    <form id="page0" class="page stack">
-        <label><span><h2>WELCOME</h2></span></label><br>
+    <form id="page0" class="page stack blankbox">
+        
+       <!--<label><span><h2>WELCOME</h2></span></label><br>
         <label>chuttar and manasi sitting on  tree, k-i-s-s-i-n-g...............</label>
         <div class="button-box" >
             <div id="btn1" ></div>
            
             <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="enter()">enter</button>
-            <!--code for gotopage3()-->
-        </div>
+            
+        </div>-->
     </form>
 
     
@@ -72,9 +73,9 @@
         <br>
         <div class="button-box" >
             <div id="btn" ></div>
-            <button type="button" class ="toggle-btn" name="p2b1" value="Previous" onclick="backtopage1() " >Previous</button>
+            <button type="button" class ="B" name="p2b1" value="Previous" onclick="backtopage1() " >Previous</button>
             <!--code for gotopage1()-->
-            <button type="button" class ="toggle-btn" name="p2b2" value="Next" onclick="gotopage3()">Next</button>
+            <button type="button" class ="B" name="p2b2" value="Next" onclick="gotopage3()">Next</button>
             <!--code for gotopage3()-->
         </div>
     </form>
@@ -90,9 +91,9 @@
         
         <div class="button-box" >
             <div id="btn" ></div>
-            <button type="button" class ="toggle-btn" name="p3b1" value="Previous" onclick="backtopage2()" >Previous</button>
+            <button type="button" class ="B1" name="p3b1" value="Previous" onclick="backtopage2()" >Previous</button>
             <!--code for gotopage2()-->
-            <button type="button" class ="toggle-btn" name="p3b2" value="Next" onclick="gotopage4()" >Next</button>
+            <button type="button" class ="B2" name="p3b2" value="Next" onclick="gotopage4()" >Next</button>
             <!--code for gotopage3()-->
         </div>
     </form>
@@ -107,9 +108,9 @@
         <br>
         <div class="button-box" >
             <div id="btn"></div>
-            <button type="button" class ="toggle-btn" name="p4b1" value="Previous" onclick="backtopage3() " >Previous</button>
+            <button type="button" class ="B1" name="p4b1" value="Previous" onclick="backtopage3() " >Previous</button>
             <!--code for gotopage3()-->
-            <button type="button" class ="toggle-btn" name="p4b2" value="Next" onclick="gotopage5()">Next</button>
+            <button type="button" class ="B2" name="p4b2" value="Next" onclick="gotopage5()">Next</button>
             <!--code for gotopage5()-->
         </div>
     </form>
@@ -292,8 +293,8 @@
         }
          
 
-        var t = document.getElementById("page1");
-        t.style.display ="none";
+       // var t = document.getElementById("page1");
+       // t.style.display ="none";
         var a = document.getElementById("page2");
         a.style.display = "none";
         var b = document.getElementById("page3");
