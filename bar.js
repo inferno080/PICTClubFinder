@@ -1,4 +1,43 @@
 //ManC you have to use these variable names. The contain the data from prev page. 
+window.onload = function(){
+  var name = prompt("Do you want to submit?");
+  var PICTMUN = localStorage.getItem("MUN");
+var PISB = localStorage.getItem("PISB");
+var PASC = localStorage.getItem("ACM");
+var BnECell= localStorage.getItem("E");
+var PICTRobototics = localStorage.getItem("Robo");
+var Pictoreal = localStorage.getItem("Picto");
+var ArtCircle = localStorage.getItem("Art");
+var NSS = localStorage.getItem("NSS");
+var TedXPICT = localStorage.getItem("TED");
+var DebSoc = localStorage.getItem("Debsoc");
+
+  
+  var obj = 
+    { 'MUN': PICTMUN ,
+    'PISB':  PISB,
+      'ACM':  PASC ,
+      'E CELL': BnECell ,
+      'ROBOTICS': PICTRobototics ,
+     'ART CIRCLE':  ArtCircle ,
+      'NSS': NSS ,
+      'TEDx': TedXPICT ,
+      'DEBSOC': DebSoc ,};
+  
+  var arr = [];
+
+  for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+          arr.push(obj[key]);
+      }
+  }
+  
+   arr=arr.sort();
+  arrr=arr.reverse();
+  var a= arrr[0];
+
+  document.getElementById('output').innerHTML = a;
+}
 var PICTMUN = localStorage.getItem("MUN");
 var PISB = localStorage.getItem("PISB");
 var PASC = localStorage.getItem("ACM");
@@ -25,6 +64,7 @@ const data = [
   const width = 1500;
   const height = 450;
   const margin = { top: 50, bottom: 50, left: 50, right: 50 };
+  var colors= d3.schemeCategory20c;
   
   const svg = d3.select('#d3-container')
     .append('svg')
@@ -43,7 +83,7 @@ const data = [
   
   svg
     .append("g")
-    .attr("fill", 'royalblue')
+    .attr("fill", colors)
     .selectAll("rect")
     .data(data.sort((a, b) => d3.descending(a.score, b.score)))
     .join("rect")
