@@ -1,4 +1,44 @@
 //ManC you have to use these variable names. The contain the data from prev page. 
+window.onload = function(){
+  var name = prompt("Do you want to submit?");
+  var PICTMUN = localStorage.getItem("MUN");
+var PISB = localStorage.getItem("PISB");
+var PASC = localStorage.getItem("ACM");
+var BnECell= localStorage.getItem("E");
+var PICTRobototics = localStorage.getItem("Robo");
+var Pictoreal = localStorage.getItem("Picto");
+var ArtCircle = localStorage.getItem("Art");
+var NSS = localStorage.getItem("NSS");
+var TedXPICT = localStorage.getItem("TED");
+var DebSoc = localStorage.getItem("Debsoc");
+
+  
+  var l = [
+    { name: 'MUN', score: PICTMUN*10 },
+    { name: 'PISB', score: PISB*10 },
+    { name: 'ACM', score: PASC*10 },
+    { name: 'E CELL', score: BnECell*10 },
+    { name: 'ROBOTICS', score: PICTRobototics*10 },
+    { name: 'ART CIRCLE', score: ArtCircle*10 },
+    { name: 'NSS', score: NSS*10 },
+    { name: 'TEDx', score: TedXPICT*10 },
+    { name: 'DEBSOC', score: DebSoc*10 },
+  ];
+var arr = [];
+
+for (var score in l) {
+    if (l.hasOwnProperty(score)) {
+        arr.push(l[score]);
+    }
+}
+
+ arr=arr.sort();
+ arrr=arr.reverse();
+
+var a= arrr[0]
+
+  document.getElementById('output').innerHTML = arrr;
+}
 var PICTMUN = localStorage.getItem("MUN");
 var PISB = localStorage.getItem("PISB");
 var PASC = localStorage.getItem("ACM");
@@ -25,6 +65,7 @@ const data = [
   const width = 1500;
   const height = 450;
   const margin = { top: 50, bottom: 50, left: 50, right: 50 };
+  var colors= d3.schemeCategory20c;
   
   const svg = d3.select('#d3-container')
     .append('svg')
@@ -43,7 +84,7 @@ const data = [
   
   svg
     .append("g")
-    .attr("fill", 'royalblue')
+    .attr("fill", colors)
     .selectAll("rect")
     .data(data.sort((a, b) => d3.descending(a.score, b.score)))
     .join("rect")
