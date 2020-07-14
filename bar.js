@@ -13,31 +13,30 @@ var TedXPICT = localStorage.getItem("TED");
 var DebSoc = localStorage.getItem("Debsoc");
 
   
-  var l = [
-    { name: 'MUN', score: PICTMUN*10 },
-    { name: 'PISB', score: PISB*10 },
-    { name: 'ACM', score: PASC*10 },
-    { name: 'E CELL', score: BnECell*10 },
-    { name: 'ROBOTICS', score: PICTRobototics*10 },
-    { name: 'ART CIRCLE', score: ArtCircle*10 },
-    { name: 'NSS', score: NSS*10 },
-    { name: 'TEDx', score: TedXPICT*10 },
-    { name: 'DEBSOC', score: DebSoc*10 },
-  ];
-var arr = [];
+  var obj = 
+    { 'MUN': PICTMUN ,
+    'PISB':  PISB,
+      'ACM':  PASC ,
+      'E CELL': BnECell ,
+      'ROBOTICS': PICTRobototics ,
+     'ART CIRCLE':  ArtCircle ,
+      'NSS': NSS ,
+      'TEDx': TedXPICT ,
+      'DEBSOC': DebSoc ,};
+  
+  var arr = [];
 
-for (var score in l) {
-    if (l.hasOwnProperty(score)) {
-        arr.push(l[score]);
-    }
-}
+  for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+          arr.push(obj[key]);
+      }
+  }
+  
+   arr=arr.sort();
+  arrr=arr.reverse();
+  var a= arrr[0];
 
- arr=arr.sort();
- arrr=arr.reverse();
-
-var a= arrr[0]
-
-  document.getElementById('output').innerHTML = arrr;
+  document.getElementById('output').innerHTML = a;
 }
 var PICTMUN = localStorage.getItem("MUN");
 var PISB = localStorage.getItem("PISB");
