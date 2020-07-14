@@ -38,6 +38,7 @@ class Particle{
         ctx.fillStyle = "#8C5523";
         ctx.fill();
     }
+    
 
     // check particle position, check mouse position, move the particle,draw the particle
     update(){
