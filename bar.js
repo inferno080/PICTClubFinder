@@ -22,7 +22,7 @@ const data = [
     { name: 'DEBSOC', score: DebSoc*10 },
   ];
   
-  const width = 900;
+  const width = 1500;
   const height = 450;
   const margin = { top: 50, bottom: 50, left: 50, right: 50 };
   

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smooth Scroll</title>
     <link rel="stylesheet" href="styleagain.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .rect:hover { opacity: 0.5; }
+  </style>
 </head>
 <body>
     <div class="container">
@@ -18,9 +26,12 @@
     
     <section id="results">
         <h1>Result</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        us sapiente dolorem inventore quis quasi nihil.
-        </p>
+         <div style="text-align: center;">
+            
+            <div id="d3-container" />
+          </div> 
+          <script type="text/javascript" src="bar.js"></script>
+        
     </section>
     <section id="clubs">
         <h1>clubs information</h1>

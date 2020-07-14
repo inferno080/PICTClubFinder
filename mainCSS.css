@@ -196,11 +196,39 @@
 .container{
     align-content: center;
 }
-.progress{
-    background-color: #20201F;
-    border-radius: 20px;
-    padding: 4px;
+.progress-bar {
+    position: relative;
+    width: 475px;
+    height: 1em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    color: white;
 }
+
+.progress-bar::before {
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    left: .2rem;
+    top: .2em;
+    bottom: .2em;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 1rem;
+    max-width: calc(100% - 1rem);
+    position: absolute;
+    background-color: #069;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+}
+	
+
+*, *::before, *::after {
+    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
 
 
 /* d
