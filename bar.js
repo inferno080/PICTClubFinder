@@ -90,7 +90,7 @@ const data = [
   
   svg
     .append("g")
-    .attr("fill", colors)
+    .attr("fill", color= "#2C3E50")
     .selectAll("rect")
     .data(data.sort((a, b) => d3.descending(a.score, b.score)))
     .join("rect")
