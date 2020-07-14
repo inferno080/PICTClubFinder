@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 section {
     position: absolute;
+    background-color: rgb(71, 112, 112);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,7 +21,7 @@ section .slide
     background: #0f0;
     height: 100%;
     flex: 1;
-    border-right: 2px solid #000;
+    border-right: 1px solid #000;
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
@@ -30,91 +31,53 @@ section .slide:last-child
 }
 section .slide:hover
 {
-    flex-grow:5;
+    flex-grow:1.5;
 
 }
 
 section .slide:nth-child(1)
 {
-    background: url('./abstract-color.jpg');
+    background: url('./farhan(2).jpeg');
     background-position: center center;
+    background-repeat: no-repeat;
+    
 }
 
 section .slide:nth-child(2)
 {
-    background: url('./club.jpg');
+    background: url('./manasi21.jpeg');
     background-position: center center;
+    background-repeat: no-repeat;
+    
 }
 
 section .slide:nth-child(3)
 {
-    background: url('./club2.jpg');
+    background: url('./farhanreal.jpeg');
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
-section .slide:nth-child(4)
-{
-    background: url('./club3.jpg');
-    background-position: center center;
-}
-
-section .slide:nth-child(5)
-{
-    background: url('./club4.jpg');
-    background-position: center center;
-}
-
-section .slide:nth-child(5)
-{
-    background: url('./club5.jpg');
-    background-position: center center;
-}
-
-section .slide:nth-child(6)
-{
-    background: url('./club6.jpg');
-    background-position: center center;
-}
-
-section .slide:nth-child(7)
-{
-    background: url('./colors.jpg');
-    background-position: center center;
-}
-
-section .slide:nth-child(8)
-{
-    background: url('./colors.jpg');
-    background-position: center center;
-}
-section .slide:nth-child(9)
-{
-    background: url('./colors.jpg');
-    background-position: center center;
-}
-section .slide:nth-child(10)
-{
-    background: url('./colors.jpg');
-    background-position: center center;
-}
 section .slide .content
 {
     position: absolute;
     bottom: 0;
-    margin: 40px;
-    padding: 30px;
-    background: #000;
-    color: #fff;
+    margin: 30px;
+    padding: 70px;
+    background: rgb(5, 22, 21);
+    color: rgb(255, 255, 255); /* box ka nonsense*/
     visibility: hidden;
     opacity: 0;
     transition: 0s;
     transform: translateY(100px);
+    opacity: 0.5;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 section .slide:hover .content
 {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
     transition: 0.5s;
     transition-delay: 0.5s;
     transform: translateY(0);
