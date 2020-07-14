@@ -19,7 +19,7 @@ body {
     /* CSS smooth scroll*/
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 .navbar {

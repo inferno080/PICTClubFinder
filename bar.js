@@ -1,6 +1,6 @@
 //ManC you have to use these variable names. The contain the data from prev page. 
 window.onload = function(){
-  var name = prompt("Do you want to submit?");
+  // var name = prompt("Do you want to submit?");
   var PICTMUN = localStorage.getItem("MUN");
 var PISB = localStorage.getItem("PISB");
 var PASC = localStorage.getItem("ACM");
@@ -34,10 +34,14 @@ var DebSoc = localStorage.getItem("Debsoc");
   
    arr=arr.sort();
   arrr=arr.reverse();
-  var a= arrr[0];
+  var b= arrr[0];
+  for( var a in obj){
+     var x
+  };
 
-  document.getElementById('output').innerHTML = a;
+  document.getElementById('output').innerHTML = "The highest value for the selected club is "+b;
 }
+
 var PICTMUN = localStorage.getItem("MUN");
 var PISB = localStorage.getItem("PISB");
 var PASC = localStorage.getItem("ACM");
@@ -48,6 +52,7 @@ var ArtCircle = localStorage.getItem("Art");
 var NSS = localStorage.getItem("NSS");
 var TedXPICT = localStorage.getItem("TED");
 var DebSoc = localStorage.getItem("Debsoc");
+var Pictoreal = localStorage.getItem("Picto");
 
 const data = [
     { name: 'MUN', score: PICTMUN*10 },
@@ -59,6 +64,8 @@ const data = [
     { name: 'NSS', score: NSS*10 },
     { name: 'TEDx', score: TedXPICT*10 },
     { name: 'DEBSOC', score: DebSoc*10 },
+    { name: 'PICTOREAL', score: Pictoreal*10 }
+
   ];
   
   const width = 1500;
