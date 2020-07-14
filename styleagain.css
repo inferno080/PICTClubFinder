@@ -18,8 +18,13 @@ body {
     height: 100%;
     /* CSS smooth scroll*/
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+<<<<<<< HEAD
     /* scroll-snap-type: y mandatory; */
+=======
+    /*scroll-snap-type: y mandatory;*/
+>>>>>>> 87c3ed1ea982955f4a6373d1548c8564ef346388
 }
 
 .navbar {
