@@ -19,7 +19,7 @@ function(event){
     mouse.x= event.x;
     mouse.y = event.y;
 });
-
+//HeyI
 //create particle
 class Particle{
     constructor(x,y,directionX,directionY, size ,color){
